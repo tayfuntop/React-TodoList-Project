@@ -11,3 +11,4 @@
  ![Proje Gifi](/public/project.gif)
 
  ![Proje Görseli](/public/Project.jpg)
+ 
