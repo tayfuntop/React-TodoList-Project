@@ -1,6 +1,6 @@
 # REACT TO DO LIST
 
-[PROJE LINK](https://razumihin41.github.io/React-Project/)
+[PROJE LINK](https://razumihin41.github.io/React-TodoList-Project/)
 
 [YOUTUBE PROFİL LINK](https://www.youtube.com/c/TayfunTp)
 
