@@ -1,0 +1,111 @@
+:root {
+    --bg-color: aquamarine;
+    --li-color: rgb(223, 212, 212);
+    --select-color: rgb(206, 126, 126);
+    --white-color: white;
+    --min-black: rgba(0, 0, 0, .4)
+}
+
+#list {
+    width: 100%;
+}
+
+#list ul {
+    padding: 0;
+    margin: 0 5px 0 4%;
+}
+
+.ulList li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 90%;
+    margin-right: 10px;
+    padding-right: 40px;
+    word-break: break-all;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.ulList li:nth-child(n):hover .fa-xmark {
+    display: block;
+}
+
+.ulList li .inputLi {
+    transition: 500ms;
+    width: 100%;
+    border-radius: 5px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 1px 14px;
+    font-size: 14px;
+    background-color: var(--white-color);
+}
+
+.ulList li .inputLi:focus {
+
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px var(--min-black);
+    background-color: var(--li-color);
+    cursor: auto;
+}
+
+
+.ulList li .checked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 25px;
+    border: 2px solid var(--min-black);
+    border-radius: 25px;
+    appearance: none;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 300ms;
+    outline: none;
+}
+
+.ulList li .checked:checked::before {
+    content: "";
+    position: absolute;
+    border-color: black;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 2.5px;
+    left: 6.5px;
+    transform: rotate(45deg);
+    height: 11px;
+    width: 4px;
+}
+
+.ulList li .checked:checked {
+    transform: scale(1.2);
+    border: 2px solid black;
+}
+
+.ulList li .checked:checked+.inputLi {
+    text-decoration: line-through;
+    background-color: var(--select-color);
+}
+
+.ulList li .fa-xmark {
+    display: none;
+    color: var(--min-black);
+    position: absolute;
+    right: 15px;
+    margin-left: 15px;
+    font-size: 22px;
+    transition: 200ms all;
+}
+
+.ulList li .fa-xmark:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: black;
+}

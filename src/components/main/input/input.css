@@ -1,0 +1,42 @@
+.header {
+   width: 90%;
+   margin-bottom: 20px;
+   display: flex;
+}
+
+.header .fa-chevron-down {
+    
+    align-items: center;
+    margin-right: 15%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 300ms;
+    color: rgba(0, 0, 0, .4);
+}
+
+.header .fa-chevron-down:hover {
+    color: black;
+    transform: scale(1.18);
+}
+
+.header input {
+    width: 60%;
+    height: 25px;
+    border-radius: 5px;
+    border: solid 2px black;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.button {
+    margin-left: 5px;
+    height: 30px;
+    border-radius: 25%;
+    transition: 200ms all;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+}
